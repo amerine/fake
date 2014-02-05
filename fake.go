@@ -32,7 +32,7 @@ var (
 		"Wood", "Barnes", "Ross", "Henderson", "Coleman", "Jenkins", "Perry", "Powell",
 		"Long", "Patterson", "Hughes", "Flores", "Washington", "Butler", "Simmons",
 		"Foster", "Gonzales", "Bryant", "Alexander", "Russell", "Griffin", "Diaz",
-		"Hayes"}
+		"Hayes", "Stevens"}
 )
 
 // FullName returns a string formed from a random FIRST_NAME and LAST_NAME
