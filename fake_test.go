@@ -20,9 +20,21 @@ func TestUserName(t *testing.T) {
 	}
 }
 
+func TestCompany(t *testing.T) {
+	company := ""
+	company = Company()
+	if company == "" {
+		t.Errorf("Expected company to return a company name, Got %s", company)
+	}
+}
+
 func ExampleUserF() {
 	fmt.Println("Full Name", FullName())
 	fmt.Println("First Name", FirstName())
 	fmt.Println("Last Name", LastName())
 	fmt.Println("Username", Username())
+}
+
+func ExampleCompany() {
+	fmt.Println("Company", Company())
 }

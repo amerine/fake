@@ -52,6 +52,7 @@ func LastName() (name string) {
 	return
 }
 
+// Returns a random username.
 func Username() (username string) {
 	username = fmt.Sprintf(randomString(usernameFormats), randomString(FIRST_NAMES), randomString(LAST_NAMES))
 	return
