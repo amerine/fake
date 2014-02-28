@@ -1,5 +1,4 @@
-fake
-====
+# fake
 
 Fake data generator for go.
 
@@ -10,6 +9,21 @@ Fake data generator for go.
 ## Documentation
 
 Visit the docs on [gopkgdoc](http://godoc.org/github.com/amerine/fake)
+
+## Example
+
+```go
+package main
+
+import (
+	"fmt"
+	"github.com/amerine/fake"
+)
+
+func main() {
+	fmt.Println("Hello,", fake.FirstName())
+}
+```
 
 # License
 

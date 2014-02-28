@@ -52,7 +52,7 @@ func LastName() (name string) {
 	return
 }
 
-func UserName() (username string) {
+func Username() (username string) {
 	username = fmt.Sprintf(randomString(usernameFormats), randomString(FIRST_NAMES), randomString(LAST_NAMES))
 	return
 }

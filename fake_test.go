@@ -1,6 +1,9 @@
 package fake
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestFullName(t *testing.T) {
 	firstFullName := FullName()
@@ -11,8 +14,15 @@ func TestFullName(t *testing.T) {
 }
 
 func TestUserName(t *testing.T) {
-	userName := UserName()
+	userName := Username()
 	if userName == "" {
 		t.Errorf("Expected UserName to return a user name. Got %s", userName)
 	}
+}
+
+func ExampleUserF() {
+	fmt.Println("Full Name", FullName())
+	fmt.Println("First Name", FirstName())
+	fmt.Println("Last Name", LastName())
+	fmt.Println("Username", Username())
 }
