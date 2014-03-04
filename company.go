@@ -15,7 +15,7 @@ var (
 	}
 )
 
-// Returns a random compoany name.
+// Returns a random company name.
 func Company() (company string) {
 	company = fmt.Sprintf("%s %s", randomString(COMPANY_NAMES), randomString(companySuffixes))
 	return
