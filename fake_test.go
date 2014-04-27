@@ -42,6 +42,14 @@ func TestDomain(t *testing.T) {
 	}
 }
 
+func TestEmail(t *testing.T) {
+	email := ""
+	email = Email()
+	if email == "" {
+		t.Errorf("Expected email to be an email, got %s", email)
+	}
+}
+
 func ExampleUserF() {
 	fmt.Println("Full Name", FullName())
 	fmt.Println("First Name", FirstName())

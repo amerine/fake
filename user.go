@@ -52,8 +52,13 @@ func LastName() (name string) {
 	return
 }
 
-// Returns a random username.
+// Username random username.
 func Username() (username string) {
 	username = fmt.Sprintf(randomString(usernameFormats), randomString(FIRST_NAMES), randomString(LAST_NAMES))
 	return
+}
+
+// Email generates a random email address for a user.
+func Email() string {
+	return fmt.Sprintf("%s@%s", Username(), Domain())
 }
