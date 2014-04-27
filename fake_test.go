@@ -3,6 +3,7 @@ package fake
 import (
 	"fmt"
 	"testing"
+	"regexp"
 )
 
 func TestFullName(t *testing.T) {
@@ -28,6 +29,19 @@ func TestCompany(t *testing.T) {
 	}
 }
 
+func TestDomain(t *testing.T) {
+	domainRe := regexp.MustCompile("[a-zA-Z]+\\.[a-zA-Z]+$")
+	domain := ""
+	domain = Domain()
+	if domain == "" {
+		t.Errorf("Expected domain to return a domain, Got %s", domain)
+	}
+
+	if !domainRe.MatchString(domain) {
+		t.Errorf("Expected domain to be a domain, Got %s", domain)
+	}
+}
+
 func ExampleUserF() {
 	fmt.Println("Full Name", FullName())
 	fmt.Println("First Name", FirstName())
@@ -37,4 +51,8 @@ func ExampleUserF() {
 
 func ExampleCompany() {
 	fmt.Println("Company", Company())
+}
+
+func ExampleDomain() {
+	fmt.Println("Domain", Domain())
 }
