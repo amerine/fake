@@ -21,8 +21,18 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello,", fake.FirstName())
+	fmt.Println("Hellor,", fake.FirstName())
+    fmt.Println("Email:", fake.Email())
+    fmt.Pringln("Company:", fake.Company())
 }
+```
+
+Outputs:
+
+```
+Hello, Jill
+Email: Ryan.Stevens@spacelyspacesprocketsltd.com
+Company: Cyberdyne Systems, Inc
 ```
 
 # License
