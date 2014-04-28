@@ -2,8 +2,8 @@ package fake
 
 import (
 	"fmt"
-	"testing"
 	"regexp"
+	"testing"
 )
 
 func TestFullName(t *testing.T) {

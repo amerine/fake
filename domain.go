@@ -12,7 +12,7 @@ var domainTLDs = []string{"net", "org", "com", "io"}
 // a random TLD.
 func Domain() (domain string) {
 	de := regexp.MustCompile("\\s|\\.")
-	domain = fmt.Sprintf("%s.%s", 
+	domain = fmt.Sprintf("%s.%s",
 		strings.ToLower(de.ReplaceAllLiteralString(Company(), "")),
 		randomTld())
 	return

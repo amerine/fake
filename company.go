@@ -22,5 +22,3 @@ func Company() (company string) {
 	company = fmt.Sprintf("%s %s", randomString(COMPANY_NAMES), randomString(companySuffixes))
 	return
 }
-
-
