@@ -21,7 +21,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Hellor,", fake.FirstName())
+	fmt.Println("Hello,", fake.FirstName())
     fmt.Println("Email:", fake.Email())
     fmt.Pringln("Company:", fake.Company())
 }
