@@ -23,7 +23,7 @@ import (
 func main() {
 	fmt.Println("Hello,", fake.FirstName())
     fmt.Println("Email:", fake.Email())
-    fmt.Pringln("Company:", fake.Company())
+    fmt.Println("Company:", fake.Company())
 }
 ```
 
